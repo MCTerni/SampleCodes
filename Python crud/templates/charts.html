@@ -1,0 +1,13 @@
+{% extends 'base.html' %} 
+{% block header %}
+    <script src="https://code.highcharts.com/highcharts.src.js" ></script>
+    <script src="https://code.jquery.com/jquery-1.7.js"></script>
+    {% load chartit %}
+    {{ recordpivchart|load_charts:"agechart,genderchart" }}
+{% endblock %}
+
+{% block content %}     
+    <div class = "container" id='genderchart'></div>
+    <br/><br/><br/>   
+    <div class = "container" id='agechart'></div>   
+{% endblock %}

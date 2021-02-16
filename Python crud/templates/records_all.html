@@ -1,0 +1,15 @@
+{% extends 'base.html' %} 
+{% load render_table from django_tables2 %}  <!--Import django-tables2 API--> 
+
+
+
+{% block content %}
+    <div class = "container"> <!--Bootstrap class - Put the table inside a  container-->
+        <h5><a href="{% url 'create_record' %}">Create a New Record</a></h5>
+        
+        <h5><a href="{% url 'chart' %}">View Charts</a></h5>
+        <br/>
+        {% render_table table %}  <!--Uses django-tables2 to render the table-->
+
+    </div>
+{% endblock %}
