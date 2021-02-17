@@ -1,5 +1,5 @@
 # SampleCodes
-Those are some samples of codes representative of my job.
+Those are some sample codes that represent my coding skills.
 
 Java - it is the most current job I did professionally. I refactored part of a code that used to be repeated, almost entirely, in 4 different classes.  The goal was extract a method to be used for the 4 original classes. The original 4 classes were 4 different UIs, 2 of them used to generate individual customer reports, and the other 2 to generate the same reports for multiple customers. In the end I not only could extract the method as required, as I also could reduce the number of UIs for 2, one for the individual generation and other for the multiple generation because  the type of report is now dynamically defined. I still see a lot of potential improvements for those classes, but the idea at this moment was extract a common method without change anything outside those 4 classes.
 
